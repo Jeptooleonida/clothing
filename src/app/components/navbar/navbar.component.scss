@@ -1,0 +1,44 @@
+$primary-color: #333333;
+$border-color: #dddddd;
+$navbar-bg-color: #ffffff;
+
+.navbar {
+  background-color: $navbar-bg-color;
+  border-bottom: 1px solid $border-color;
+  color: white; // Text color
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  .nav-content {
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .nav-buttons {
+    display:grid ;
+    grid-template-columns: auto;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem; 
+    color: $primary-color; 
+  }
+
+  .navbar-nav .nav-link {
+    color: $primary-color; 
+  }
+
+  .navbar-toggler-icon {
+    color: $primary-color; 
+  }
+
+  .nav-buttons .nav-link {
+    color: $primary-color; 
+
+    i {
+      margin-right: 5px; 
+    }
+  }
+}
